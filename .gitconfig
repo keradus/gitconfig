@@ -1,3 +1,11 @@
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    ui = auto
+
+
 [core]
     autocrlf = input
     editor = mcedit
