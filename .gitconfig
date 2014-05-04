@@ -13,6 +13,10 @@
     wds = diff --staged --color-words
     wdu = diff --color-words
 
+    ci = commit
+    cm = commit
+    amend = commit --amend
+
 
 [branch "master"]
     mergeoptions = --no-ff --no-commit
