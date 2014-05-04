@@ -1,3 +1,7 @@
+[format]
+    pretty = format:'%C(green)%h%Creset %C(cyan)%ad%x08%x08%x08%x08%x08%x08%Creset -%C(yellow)%d%Creset %s %C(green)[%Creset%C(cyan)%an%Creset%C(green)]%Creset'
+
+
 [grep]
     linenumber = true
 
