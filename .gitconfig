@@ -1,2 +1,6 @@
+[log]
+    date = iso
+
+
 [merge]
     ff = no
