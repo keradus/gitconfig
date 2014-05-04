@@ -1,3 +1,7 @@
+[grep]
+    linenumber = true
+
+
 [log]
     date = iso
 
