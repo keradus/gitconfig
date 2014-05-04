@@ -1,0 +1,4 @@
+.gitconfig
+==========
+
+personal .gitconfig
