@@ -21,6 +21,14 @@
     hist = log --first-parent
     peeps = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
 
+    rso = remote show origin
+    co = checkout
+    br = branch
+    br-current = rev-parse --abbrev-ref HEAD
+    puff = pull --ff
+    upd = pull --ff
+    poc = !git push origin `git br-current`
+
 
 [branch "master"]
     mergeoptions = --no-ff --no-commit
