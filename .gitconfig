@@ -1,3 +1,7 @@
+[branch "master"]
+    mergeoptions = --no-ff --no-commit
+
+
 [color]
     branch = auto
     diff = auto
