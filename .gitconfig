@@ -17,6 +17,10 @@
     cm = commit
     amend = commit --amend
 
+    graph = log --graph
+    hist = log --first-parent
+    peeps = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
+
 
 [branch "master"]
     mergeoptions = --no-ff --no-commit
