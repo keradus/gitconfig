@@ -2,6 +2,10 @@
     st = status
     ss = status -sb
 
+    addi = add --patch
+    unstage = reset HEAD --
+    ls = ls-files
+
 
 [branch "master"]
     mergeoptions = --no-ff --no-commit
