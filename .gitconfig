@@ -6,6 +6,13 @@
     unstage = reset HEAD --
     ls = ls-files
 
+    du = diff
+    ds = diff --staged
+    dsw = diff --staged -w
+    duw = diff -w
+    wds = diff --staged --color-words
+    wdu = diff --color-words
+
 
 [branch "master"]
     mergeoptions = --no-ff --no-commit
