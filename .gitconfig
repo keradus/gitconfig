@@ -1,3 +1,8 @@
+[alias]
+    st = status
+    ss = status -sb
+
+
 [branch "master"]
     mergeoptions = --no-ff --no-commit
 
