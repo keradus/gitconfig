@@ -19,7 +19,7 @@
 
     graph = log --graph
     hist = log --first-parent
-    peeps = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
+    contributors = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
 
     rso = remote show origin
     co = checkout
