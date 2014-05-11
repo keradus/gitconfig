@@ -19,6 +19,7 @@
 
     graph = log --graph
     hist = log --first-parent
+    hdeploy = "!git for-each-ref --format='%(subject) : %(refname:short)' refs/tags | grep 'deploy/' | sort -V | awk {'printf \"%-32s - %s\\n\",$1,$2'} FS=\\: | sed s#deploy/##g"
     hkaboom = "!git for-each-ref --format='%(subject) : %(refname:short)' refs/tags | grep 'kaboom/' | sort -V | awk {'printf \"%-32s - %s\\n\",$1,$2'} FS=\\: | sed s#kaboom/##g"
     contributors = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
 
