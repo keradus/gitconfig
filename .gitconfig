@@ -29,6 +29,7 @@
     puff = pull --ff
     upd = pull --ff
     poc = !git push origin `git br-current`
+    prune-all = !git remote | xargs -n 1 git remote prune
 
 
 [branch "master"]
