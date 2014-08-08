@@ -48,7 +48,6 @@
 
 [core]
     autocrlf = input
-    editor = mcedit
     safecrlf = true
 
 
