@@ -1,13 +1,13 @@
 [alias]
+    s = status -sb
     st = status
-    ss = status -sb
 
     addi = add --patch
     unstage = reset HEAD --
     ls = ls-files
 
-    du = diff
     ds = diff --staged
+    du = diff
     dsw = diff --staged -w
     duw = diff -w
     wds = diff --staged --color-words
