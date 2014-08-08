@@ -37,6 +37,7 @@
     update = "!git update-tag; git update-br"
     type = cat-file -t
     dump = cat-file -p
+    clear = "!git update; git gc"
 
 
 [branch "master"]
