@@ -35,6 +35,8 @@
     # prune remote tags from all remotes and override local tags with corresponding versions on remote
     update-tag = fetch --all --prune --tags
     update = "!git update-tag; git update-br"
+    type = cat-file -t
+    dump = cat-file -p
 
 
 [branch "master"]
