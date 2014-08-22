@@ -30,6 +30,7 @@
     br-current = rev-parse --abbrev-ref HEAD
     puff = pull --ff
     poc = !git push origin `git br-current`
+    puc = !git push upstream `git br-current`
     # prune remote branches from all remotes and fetch branches/tags
     update-br = fetch --all --prune
     # prune remote tags from all remotes and override local tags with corresponding versions on remote
