@@ -70,5 +70,3 @@
     date = iso
 
 
-[merge]
-    ff = no
