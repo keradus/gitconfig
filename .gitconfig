@@ -25,6 +25,7 @@
     hkaboom = "!git for-each-ref --format='%(subject) : %(refname:short)' refs/tags | grep 'kaboom/' | sort -V | awk {'printf \"%-32s - %s\\n\",$1,$2'} FS=\\: | sed s#kaboom/##g"
     contributors = shortlog -s -n --no-merges
 
+    search = branch -a --contains
     rso = remote show origin
     co = checkout
     br = branch
