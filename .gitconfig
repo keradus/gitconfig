@@ -33,11 +33,8 @@
     puff = pull --ff
     poc = !git push origin `git br-current`
     puc = !git push upstream `git br-current`
-    # prune remote branches from all remotes and fetch branches/tags
-    update-br = fetch --all --prune
-    # prune remote tags from all remotes and override local tags with corresponding versions on remote
-    update-tag = fetch --all --prune --tags
-    update = "!git update-tag; git update-br"
+    # prune remote branches/tags from all remotes, fetch branches/tags and override local tags with corresponding versions on remote
+    update = fetch --all --prune --tags
     type = cat-file -t
     dump = cat-file -p
     clear = "!git update; git gc"
