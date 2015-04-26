@@ -37,6 +37,7 @@
     puc = !git push upstream `git br-current`
     # prune remote branches/tags from all remotes, fetch branches/tags and override local tags with corresponding versions on remote
     update = fetch --all --prune --tags
+    tags = tag -n
     type = cat-file -t
     dump = cat-file -p
     clear = !          \
