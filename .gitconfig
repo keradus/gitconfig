@@ -32,6 +32,22 @@
     co = checkout
     br = branch
     br-current = rev-parse --abbrev-ref HEAD
+    # Archiving branch (create tag archive/BRANCH and destroy BRANCH).
+    # Call like `git br-arch BRANCH`.
+    # This alias makes the following steps:
+    # * fetch and clear all branches/tags
+    # * ensure that branch exists
+    # * create new tag based on origin branch
+    # * push created tag
+    # * destroy archivized remote branch
+    # * prune destroyed branch
+    br-arch = !                                                \
+        git fetch origin --prune --tags                     && \
+        git rev-parse --verify origin/$1                    && \
+        git tag archive/$1 origin/$1 -m \"`git datetime`\"  && \
+        git push origin archive/$1                          && \
+        git push origin :$1                                 && \
+        git remote prune origin                             && :
     puff = pull --ff
     poc = !git push origin `git br-current`
     puc = !git push upstream `git br-current`
