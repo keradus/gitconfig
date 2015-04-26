@@ -1,4 +1,6 @@
 [alias]
+    datetime = !date +'%Y-%m-%d %H:%M:%S' && :
+
     s = status -sb
     st = status
 
