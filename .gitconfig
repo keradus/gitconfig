@@ -74,6 +74,7 @@
 [core]
     autocrlf = input
     safecrlf = true
+    quotepath = false
 
 
 [format]
