@@ -18,6 +18,7 @@
     ci = commit
     cm = commit
     amend = commit --amend
+    pick = cherry-pick
 
     graph = log --graph
     hist = log --first-parent
