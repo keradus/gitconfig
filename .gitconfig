@@ -24,7 +24,7 @@
     amend = commit --amend
     pick = cherry-pick
 
-    graph = log --graph
+    graph = log --graph --all
     hist = log --first-parent
     last = log -1 --stat
     contributors = shortlog -s -n --no-merges
