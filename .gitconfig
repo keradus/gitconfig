@@ -33,7 +33,7 @@
     rso = remote show origin
     co = checkout
     br = branch
-    br-current = rev-parse --abbrev-ref HEAD
+    current-branch = rev-parse --abbrev-ref HEAD
     # Archiving branch (create tag archive/BRANCH and destroy BRANCH).
     # Call like `git br-arch BRANCH`.
     # This alias makes the following steps:
@@ -51,8 +51,8 @@
         git push origin :$1                                 && \
         git remote prune origin                             && :
     puff = pull --ff
-    poc = !git push origin `git br-current`
-    puc = !git push upstream `git br-current`
+    poc = !git push origin `git current-branch`
+    puc = !git push upstream `git current-branch`
     # prune remote branches/tags from all remotes, fetch branches/tags and override local tags with corresponding versions on remote
     update = fetch --all --prune --tags
     tags = tag -n
