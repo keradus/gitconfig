@@ -94,3 +94,10 @@
     date = iso
 
 
+[merge]
+    ff = no
+
+
+[pager]
+    status = true
+    show-branch = true
