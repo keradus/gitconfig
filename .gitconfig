@@ -9,11 +9,15 @@
     ls = ls-files
 
     ds = diff --staged
+    staged = diff --staged
     du = diff
+    unstaged = diff
     dsw = diff --staged -w
     duw = diff -w
     wds = diff --staged --color-words
+    wstaged = diff --staged --color-words
     wdu = diff --color-words
+    wunstaged = diff --color-words
 
     ci = commit
     cm = commit
