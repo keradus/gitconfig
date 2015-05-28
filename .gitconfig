@@ -77,8 +77,9 @@
 
 [core]
     autocrlf = input
-    safecrlf = true
+    pager = less -FRSX
     quotepath = false
+    safecrlf = true
 
 
 [format]
