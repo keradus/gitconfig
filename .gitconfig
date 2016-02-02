@@ -51,8 +51,12 @@
         git push origin :$1                                 && \
         git remote prune origin                             && :
     puff = pull --ff
+
     poc = !git push origin `git br-current`
     puc = !git push upstream `git br-current`
+    boom = !git poc -f && :
+    kaboom = !git add -A . && git amend --no-edit --allow-empty && git boom && :
+
     # prune remote branches/tags from all remotes, fetch branches/tags and override local tags with corresponding versions on remote
     update = fetch --all --prune --tags
     tags = tag -n
