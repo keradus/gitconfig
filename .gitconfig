@@ -80,7 +80,7 @@
 
 
 [core]
-    autocrlf = input
+    autocrlf = false
     pager = less -FRSX
     quotepath = false
     safecrlf = true
