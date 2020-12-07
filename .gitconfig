@@ -97,4 +97,5 @@
 [log]
     date = iso
 
-
+[user]
+	useConfigOnly = true
