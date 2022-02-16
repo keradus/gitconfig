@@ -84,6 +84,7 @@
     pager = less -FRSX
     quotepath = false
     safecrlf = true
+    ignoreCase = false
 
 
 [format]
